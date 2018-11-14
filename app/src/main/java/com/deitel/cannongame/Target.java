@@ -8,7 +8,7 @@ public class Target extends GameElement {
    // constructor
    public Target(CannonView view, int color, int hitReward, int x, int y,
       int width, int length, float velocityY) {
-      super(view, color, CannonView.TARGET_SOUND_ID, x, y, width, length,
+      super(view, color, CannonView.PURDY_BLOCKER_SOUND_ID, x, y, width, length,
          velocityY);
       this.hitReward = hitReward;
    }

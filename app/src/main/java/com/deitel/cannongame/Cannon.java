@@ -51,7 +51,7 @@ public class Cannon {
 
       // construct Cannonball and position it in the Cannon
       cannonball = new Cannonball(view, Color.BLACK,
-         CannonView.CANNON_SOUND_ID, -radius,
+         CannonView.PURDY_CANNON_SOUND_ID, -radius,
          view.getScreenHeight() / 2 - radius, radius, velocityX,
          velocityY);
 
