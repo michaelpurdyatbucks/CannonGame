@@ -122,6 +122,7 @@ public class CannonView extends SurfaceView
               soundPool.load(context, R.raw.cannon_fire, 1));
       soundMap.put(BLOCKER_SOUND_ID,
               soundPool.load(context, R.raw.blocker_hit, 1));
+      //TODO record the new sounds
       soundMap.put(PURDY_TARGET_SOUND_ID,
               soundPool.load(context, R.raw.purdy_target_hit, 1));
       soundMap.put(PURDY_CANNON_SOUND_ID,
