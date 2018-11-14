@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- TODO: Create a different color scheme by selecting different hexadecimal values
-Google "hexadecimal color picker"-->
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="dark">#1976D2</color>
-    <color name="light">#FFE100</color>
+    <color name="colorPrimary">#70C1B3</color>
+    <color name="colorPrimaryDark">#247BA0</color>
+    <color name="colorAccent">#B2DBBF</color>
+    <color name="dark">#F3FFBD</color>
+    <color name="light">#FF1654</color>
 </resources>
