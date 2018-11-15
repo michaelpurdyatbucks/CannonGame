@@ -56,7 +56,7 @@ public class CannonView extends SurfaceView
 
    // constants for the Blocker
    public static final double BLOCKER_WIDTH_PERCENT = 1.0 / 40;
-   public static final double BLOCKER_LENGTH_PERCENT = 1.0 / 4;
+   public static final double BLOCKER_LENGTH_PERCENT = 1.0 / 6;
    public static final double BLOCKER_X_PERCENT = 1.0 / 2;
    public static final double BLOCKER_SPEED_PERCENT = 1.0;
 
@@ -122,7 +122,6 @@ public class CannonView extends SurfaceView
               soundPool.load(context, R.raw.cannon_fire, 1));
       soundMap.put(BLOCKER_SOUND_ID,
               soundPool.load(context, R.raw.blocker_hit, 1));
-      //TODO record the new sounds
       soundMap.put(PURDY_TARGET_SOUND_ID,
               soundPool.load(context, R.raw.purdy_target_hit, 1));
       soundMap.put(PURDY_CANNON_SOUND_ID,
@@ -377,6 +376,7 @@ public class CannonView extends SurfaceView
 
                cannon.removeCannonball(); // remove Cannonball from game
                targets.remove(n); // remove the Target that was hit
+               blocker.incrementSize(); // make the blocker a little bigger
                --n; // ensures that we don't skip testing new target n
                break;
             }

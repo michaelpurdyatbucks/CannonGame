@@ -17,6 +17,10 @@ public class Blocker extends GameElement {
    public int getMissPenalty() {
       return missPenalty;
    }
+
+   public void incrementSize() {
+      this.shape.bottom = (int) (this.shape.bottom * 1.04);
+   }
 }
 
 /*********************************************************************************
